@@ -1,0 +1,131 @@
+/* колір основного тексту #757575 */
+/* вторинний колір тексту  #212121;
+ */
+/* білий #FFFFFF  */
+/* акцент #2196F3 */
+/* вторинний колір фону #F5F4FA; */
+
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --primary-white-color: #ffffff;
+    --secondary-bcg-color: #F5F4FA;
+}
+
+body {
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+}
+
+.list {
+    list-style: none;
+}
+
+.logo {
+    color: var(--title-text-color);
+}
+
+.logo-blue {
+    color: var(--accent-color);
+}
+
+.logo:hover,
+.logo:focus {
+    color: var(--accent-color);
+}
+
+/* Site nav */
+
+.site-nav .link {
+    color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+.contact-us .link {
+    color: var(--primary-text-color);
+}
+
+.contact-us .link:hover, 
+.contact-us .link:focus {
+    color: var(--accent-color);
+}
+
+/* Головна сторінка */
+/* Hero section */
+
+.hero-tittle {
+    color: var(--primary-white-color);
+    background-color: #2F303A;
+}
+
+/* Button */
+
+.button {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+.button.primary {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+.button.secondary {
+    color: var(--title-text-color);
+    background-color: var(--secondary-bcg-color);
+}
+.button.secondary.current:hover {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+/* Секція про переваги компанії */
+
+.section-tittle {
+    color: var(--title-text-color);
+}
+
+.feature-list .tittle {
+    color: var(--title-text-color);
+}
+
+/* Наша команда */
+
+.team .tittle {
+    color: var(--title-text-color);
+}
+
+/* Футер */
+
+.address {
+    color: var(--primary-white-color);
+    background-color: #2F303A;
+}
+
+.address .list {
+    color: var(--primary-white-color);
+    background-color: #2F303A;
+}
+
+.address .list .link {
+    color: var(--primary-text-color);
+    background-color: #2F303A;
+}
+
+.address .list .map {
+    color: var(--primary-white-color);
+}
+/* Сторінка портфоліо */
+
+.project-list .tittle {
+    color: var(--title-text-color);
+}
