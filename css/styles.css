@@ -10,7 +10,10 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
+  --bcg-color: #2F303A;
   --secondary-bcg-color: #f5f4fa;
+  --active-btn: #188CE8;
+  --footer-contact-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -79,12 +82,18 @@ body {
   list-style: none;
 }
 
+.visually-hidden {
+  display: none;
+}
+
 /* Головна сторінка */
 /* Hero section */
+.hero {
+  background-color: var(--bcg-color);
+}
 
 .hero-tittle {
   color: var(--primary-white-color);
-  background-color: #2f303a;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -100,23 +109,27 @@ body {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
 
   text-align: center;
+  cursor: pointer;
 }
 
-.button.primary {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: var(--active-btn);
 }
 
-.button.filter {
+.button-filter {
   color: var(--title-text-color);
   background-color: var(--secondary-bcg-color);
 
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -125,8 +138,9 @@ body {
   cursor: pointer;
 }
 
-.button.filter:hover,
-.button.filter:focus {
+.button-filter:hover,
+.button-filter:focus,
+.button-filter:active {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
@@ -150,7 +164,15 @@ body {
 
 /* Наша команда */
 
-.team .tittle {
+.team {
+  background-color: var(--secondary-bcg-color);
+}
+
+.teammate {
+  background-color: var(--primary-white-color);
+}
+
+.teammate .tittle {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -158,7 +180,7 @@ body {
   text-align: center;
 }
 
-.team .profession {
+.profession {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -167,12 +189,16 @@ body {
 /* Футер */
 
 .footer {
-  background-color: #2f303a;
+  background-color: var(--bcg-color);
 }
 
 .address .link {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-contact-color);
   font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
 .address .map {
